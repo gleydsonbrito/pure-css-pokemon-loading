@@ -4,6 +4,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: #d2f2d4;
 }
 
 h1 {
@@ -12,31 +13,28 @@ h1 {
 }
 
 main {
-  width: 200px;
+  width: 210px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .ball {
   position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  box-shadow: 3px 3px 3px #333;
-  animation-duration: 1s;
+  height: 80px;
+  animation-duration: 1.4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 .a {
-  background-color: #333;
   animation-name: loading-a;
 }
 
 .b {
-  background-color: #ED2B2A;
   animation-name: loading-b;
-  animation-delay: .5;
+  height: 45px;
+  animation-delay: .7;
 }
 
 @keyframes loading-b {
@@ -45,16 +43,16 @@ main {
   }
   25% {
     transform: scale(0.4);
-    right: 80px;
+    right: 70px;
     z-index: 0;
   }
   50% {
     transform: scale(1);
-    right: 160px;
+    right: 140px;
   }
   75% {
     transform: scale(1.4);
-    right: 80px;
+    right: 70px;
     z-index: 1;
   }
   100% {
@@ -69,16 +67,16 @@ main {
   }
   25% {
     transform: scale(1.4);
-    left: 80px;
+    left: 70px;
     z-index: 1;
   }
   50% {
     transform: scale(1);
-    left: 160px;
+    left: 140px;
   }
   75% {
     transform: scale(0.4);
-    left: 80px;
+    left: 70px;
     z-index: 0;
   }
   100% {
